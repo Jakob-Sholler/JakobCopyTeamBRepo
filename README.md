@@ -22,3 +22,6 @@ Weekly Placeholder meeting Thursdays at XX:XX A/PM <br/>
 
 ## Communication policy  <br/>
 To be decided in meeting/In discord(currently figuring out) <br/> 
+
+## Agenda <br/>
+To get policies and meetings sorted out, and get back on track for D0. <br/>
