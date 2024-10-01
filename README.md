@@ -16,3 +16,9 @@ Students in stem majors are more often than not required to complete large proje
 ### 2	
 Most people struggle to manage their time spent on digital devices and constant exposure to social media can lead to further addiction. To prevent this Setting Boundaries around Devices  can help Break addiction. Schools and workplaces could encourage digital detox programs to help reduce dependency.  
 
+## Meeting Times <br/>
+Sprint Placeholder Saturdays at XX:XX A/PM <br/>
+Weekly Placeholder meeting Thursdays at XX:XX A/PM <br/>
+
+## Communication policy  <br/>
+To be decided in meeting/In discord(currently figuring out) <br/> 
