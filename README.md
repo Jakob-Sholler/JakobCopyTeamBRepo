@@ -28,3 +28,10 @@ To be decided in meeting/In discord(currently figuring out) <br/>
 
 ## Agenda <br/>
 To get policies and meetings sorted out, and get back on track for D0. <br/>
+
+## Current Work
+This is the current deliverable we are working on and the documents that are being turned in. 
+
+Project Description: https://docs.google.com/document/d/1demnI2AGLqRq0tynH64OC5E2TObL6xwC8iLmuKekHJM/edit#heading=h.vx91wcekj2ls
+
+User stories: https://docs.google.com/document/d/1fna_P-79OV_oBexrISX9CtECBbBN3UYUMlmcUP4zJIw/edit
