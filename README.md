@@ -1,4 +1,4 @@
-# TeamB
+# TeamBrilliance
 Team B Repo for COS 420 of Fall 2024
 ## Members:
 Product Manager: Sebastian Anghel<br/>
