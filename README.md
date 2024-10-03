@@ -1,16 +1,17 @@
 # TeamBrilliance
 Team Brilliance Repo for COS 420 of Fall 2024
 ## Members:
-Product Manager: Sebastian Anghel<br/>
- Dev 1: Dmitrii Tsutskov<br/>
-Dev 2: Jakob Sholler<br/>
+Product Manager: Jakob Sholler<br/>
+Dev 1: Dmitrii Tsutskov<br/>
+Dev 2: Sebastian Anghel<br/>
 Dev 3: Boubacar Mankirba<br/>
 Design: Ryan Osullivan<br/>
 ### Mission Statment <br/>
 To Simplify learning
+## Deadlines
+----------Deadlines go here---------------------
 ## Problem Statments<br/>
 https://docs.google.com/document/d/13knMn75Q25Jv6_pnNAJQNVn6WYFF3Z4yXRT9aAfxyMk/edit <br/>
-
 ### 1. Stem Majors overwhelmed	
 University students, particularly those in STEM majors, are feeling overwhelmed, with their schedules becoming more packed every day, leaving little room for relaxation or enjoyment. 
 With Ever changing and evolving technology students in STEM need to spend extra time learning the new technologies for their majors. New technologies such as Improved or new programs like Constantly Learning new technologies takes extra time out of those students' days leaving little time for other activities. 
@@ -42,3 +43,11 @@ https://docs.google.com/document/d/1fna_P-79OV_oBexrISX9CtECBbBN3UYUMlmcUP4zJIw/
 
 ### Work Folder
 https://drive.google.com/drive/folders/1XYb6_JME-FIWZ1G_R6YrgHP3Jog7COPF
+
+
+## Meeting Attendance Policy
+Life happens, if there are factors that make you miss a meeting it is all good. There will be a note document in each meeting and will be in the shared goodle drive for out team. So you can view and see what we did during the meeting. If there are things such as assigning tasks during the meeting and you are out, then you will be stuck with whatever is left. 
+## Deadline policy
+Deadlines will be based on  the window of time for the assignment along with the number of tasks, Typically broken down into 3 periods, might be more if there is alot of work for a deliverable. The last day will always be cut off and used Exclusively for either touchups or finalizing quality checking. For example lets say there is 20 tasks total, and 7 days to do the assignment. it will be 6 days for the assignment, and 15 tasks. Breaking it into thirds  day 1-2 will be for the first set of tasks( for this case since there are 5 of us and we each have 3 tasks it will be 1 task for day 1-2 day 3-4 will be your second task and day 5-6 will be the third task. 
+## Quality assurance policy
+For quality assurance it will be pretty similar to the deadlines policy. For the quality insurance on the first batch of tasks they will be due by day 3-4 for batch 2 5-6 and for the final one is day 7.  This is set up so that in the case tasks are not completed untill the end of their deadline you can still give feedback. If you can, as soon as it is available complete the quality assurance on a task. 
