@@ -9,7 +9,7 @@ Design: Ryan Osullivan<br/>
 ### Mission Statment <br/>
 To Simplify learning
 ## Deadlines
-----------Deadlines go here---------------------
+Task Set 1 Due on 10/6 At 6 PM<br/> Task set 2 Due at 10/7 6 PM <Br/> Task set 3  Due at 10/8  6PM<br/> Quality Assurance Due at 10/9 by 6 PM
 ## Problem Statments<br/>
 https://docs.google.com/document/d/13knMn75Q25Jv6_pnNAJQNVn6WYFF3Z4yXRT9aAfxyMk/edit <br/>
 ### 1. Stem Majors overwhelmed	
