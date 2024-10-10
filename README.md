@@ -8,10 +8,25 @@ Dev 3: Boubacar Mankirba<br/>
 Design: Ryan Osullivan<br/>
 
 ### Quick Start
-To get start change directory to \app and run `npm run start` from the terminal
 
+#### Build 
+Step 1: Open Terminal \
+Step 2: Run `cd app` in terminal to position yourself in the app folder \
+Step 3: Run `npm run build` 
 
-### Mission Statement <br/>
+#### Run application
+Step 1: Open Terminal \
+Step 2: Run `cd app` in terminal to position yourself in the app folder \
+Step 3: Run `npm start` or `npm run start` 
+
+A browser window should open automatically. If no browser window opens, open one manually and navigate to http://localhost:3000/
+
+#### Run unit tests
+Step 1: Open Terminal \
+Step 2: Run `cd app` in terminal to position yourself in the app folder \
+Step 3: Run `npm run test` 
+
+## Mission Statement
 Simplify Learning
 
 ## Deadlines
