@@ -9,6 +9,14 @@ Design: Ryan Osullivan<br/>
 
 ### Quick Start
 
+#### Install
+Step 1: Open Terminal \
+Step 2: Run `cd app` in terminal to position yourself in the app folder \
+Step 3: Run `npm install`
+
+This will install all the packages and their dependencies used by the app. You need to complete this before building, running or testing the app.
+
+
 #### Build 
 Step 1: Open Terminal \
 Step 2: Run `cd app` in terminal to position yourself in the app folder \
