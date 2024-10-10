@@ -6,12 +6,23 @@ Dev 1: Dmitrii Tsutskov<br/>
 Dev 2: Sebastian Anghel<br/>
 Dev 3: Boubacar Mankirba<br/>
 Design: Ryan Osullivan<br/>
-### Mission Statment <br/>
-To Simplify learning
+
+### Quick Start
+To get start change directory to \app and run `npm run start` from the terminal
+
+
+### Mission Statement <br/>
+Simplify Learning
+
 ## Deadlines
-Task Set 1 Due on 10/6 At 6 PM<br/> Task set 2 Due at 10/7 6 PM <Br/> Task set 3  Due at 10/8  6PM<br/> Quality Assurance Due at 10/9 by 6 PM
-## Problem Statments<br/>
+Task Set 1 Due on 10/6 At 6 PM \
+Task Set 2 Due at 10/7 6 PM \
+Task Set 3 Due at 10/8 6 PM \
+Quality Assurance Due at 10/9 by 6 PM
+
+## Problem Statements<br/>
 https://docs.google.com/document/d/13knMn75Q25Jv6_pnNAJQNVn6WYFF3Z4yXRT9aAfxyMk/edit <br/>
+
 ### 1. Stem Majors overwhelmed	
 University students, particularly those in STEM majors, are feeling overwhelmed, with their schedules becoming more packed every day, leaving little room for relaxation or enjoyment. 
 With Ever changing and evolving technology students in STEM need to spend extra time learning the new technologies for their majors. New technologies such as Improved or new programs like Constantly Learning new technologies takes extra time out of those students' days leaving little time for other activities. 
