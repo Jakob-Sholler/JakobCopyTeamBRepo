@@ -1,0 +1,85 @@
+/* src/LandingPage.css */
+
+/* Existing styles... */
+
+/* Course List */
+.course-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin-top: 20px; /* Space from the previous section */
+}
+
+/* Course Item */
+.course-item {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0; /* Margin between items */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); /* Glow effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.course-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6); /* Enhanced glow on hover */
+}
+
+/* Course Button */
+.course-button {
+    background: #00bcd4; /* Cyan button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s; /* Transition for button */
+}
+
+.course-button:hover {
+    background: #0097a7; /* Darker shade on hover */
+}
+
+/* Tabs Container */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Tab Links */
+.tablink {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s; /* Transition for hover effect */
+    flex: 1;
+    margin: 0 5px; /* Margin between buttons */
+}
+
+.tablink:hover {
+    background: rgba(255, 255, 255, 0.2); /* Darker shade on hover */
+}
+
+/* Active Tab */
+.tablink.active {
+    background: #00bcd4; /* Active tab color */
+    color: white; /* White text for active tab */
+}
+
+/* Tab Content */
+.tabcontent {
+    display: none; /* Hide all tab content by default */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); /* Glow effect */
+}
+
+/* Show the active tab content */
+.tabcontent.active {
+    display: block; /* Show the active tab content */
+}

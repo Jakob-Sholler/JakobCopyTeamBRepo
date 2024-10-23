@@ -1,38 +1,82 @@
-.App {
+/* src/App.css */
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Use a modern font */
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Futuristic background gradient */
+  color: #ffffff; /* White text */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  max-width: 400px;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* Futuristic glow */
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.9); /* Neon effect */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Form Elements */
+input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 1rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1); /* Transparent input */
+  color: #ffffff; /* White text */
+  transition: background 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6); /* Placeholder color */
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.2); /* Focus effect */
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #00bcd4; /* Cyan button */
   color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s; /* Transition for button */
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background: #0097a7; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight zoom effect */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Link Style */
+p {
+  margin-top: 10px;
+}
+
+p button {
+  background: transparent;
+  border: none;
+  color: #00bcd4; /* Cyan text for link */
+  cursor: pointer;
+  text-decoration: underline; /* Underline for link effect */
 }
