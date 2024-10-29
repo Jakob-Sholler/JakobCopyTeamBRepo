@@ -8,21 +8,15 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Check out code
-      uses: actions/checkout@v2
+      - name: Check out code
+        uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # Use your project's Node.js version
+      - name: Install dependencies
+        run: npm install  # Ensure package.json is in the root of the repo
+      - name: Run tests
+        run: npm test
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'  # Change this to your required version
-
-    - name: Install dependencies
-      run: npm install  # Change this command if you use another package manager
-
-    - name: Run tests
-      run: npm test  # Change this command to your test command
-
-    - name: Fail the build if tests fail
-      run: exit 1  # Ensure this exits with a non-zero code if tests fail
