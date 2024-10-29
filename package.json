@@ -1,45 +1,54 @@
 {
-  "name": "code",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^16.0.1",
-    "@testing-library/user-event": "^13.5.0",
-    "firebase": "^11.0.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.27.0",
-    "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4"
-  },
+  "name": "jest-report-action",
+  "version": "2.3.3",
+  "author": "",
+  "description": "Parse junit output from jest-junit reporter and display test annotations",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "preversion": "make build_and_stage",
+    "build": "parcel",
+    "build:minified": "npm run build -- build index.js --target node --bundle-node-modules --no-source-maps",
+    "build:unminified": "npm run build:minified -- --no-minify",
+    "lint": "eslint",
+    "lint:code": "npm run lint -- *.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgnusG/jest-report-action.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [
+    "github",
+    "actions",
+    "jest",
+    "tests"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgnusG/jest-report-action/issues"
+  },
+  "homepage": "https://github.com/IgnusG/jest-report-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/github": "^2.1.1",
+    "@babel/parser": "^7.9.4",
+    "@babel/traverse": "^7.9.0",
+    "@babel/types": "^7.9.0",
+    "escape-string-regexp": "^2.0.0",
+    "xml2js": "^0.4.23"
   },
   "devDependencies": {
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "typescript": "^5.6.3"
+    "eslint": "^6.8.0",
+    "esm": "^3.2.25",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.3.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "npm run lint -- --cache --fix"
   }
 }
