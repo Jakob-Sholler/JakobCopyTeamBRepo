@@ -1,15 +1,17 @@
 // src/components/LandingPage.tsx
 
 import React, { useEffect, useState } from 'react';
-import { auth } from '../firebaseConfig';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+import { auth } from './firebaseConfig'; // Ensure this points to your firebase configuration
 import './LandingPage.css';
 
 interface LandingPageProps {
-    onLogout: () => void;
+    onLogout: () => void; // Prop to handle logout
 }
 
 const LandingPage = (props: LandingPageProps): JSX.Element => {
     const [activeTab, setActiveTab] = useState<string>('exercises'); // State to track the active tab
+    const navigate = useNavigate(); // Hook for navigation
 
     // Function to handle tab switching
     const openTab = (tabName: string): void => {
@@ -17,21 +19,31 @@ const LandingPage = (props: LandingPageProps): JSX.Element => {
     };
 
     const courses = [
-        { id: 1, title: 'Artificial Intelligence', description: 'Explore AI concepts and applications.' },
-        { id: 2, title: 'Machine Learning', description: 'Learn algorithms and data science.' },
-        { id: 3, title: 'Web Development', description: 'Build modern web applications.' },
-        { id: 4, title: 'Data Science', description: 'Dive into data analysis and visualization.' },
+        { id: 1, title: 'Variables', description: 'Learn how to store and manipulate data using variables.' },
+        { id: 2, title: 'Data Types', description: 'Understand different data types like integers, floats, strings, and booleans.' },
+        { id: 3, title: 'Control Structures', description: 'Explore conditional statements (if, elif, else) and loops (for, while).' },
+        { id: 4, title: 'Functions', description: 'Learn how to create reusable blocks of code with functions.' },
+        { id: 5, title: 'Lists and Tuples', description: 'Discover how to store collections of data using lists and tuples.' },
+        { id: 6, title: 'Dictionaries', description: 'Understand how to use dictionaries for key-value pairs and data storage.' },
+        { id: 7, title: 'Basic Input/Output', description: 'Learn how to take user input and display output using print and input functions.' },
     ];
+    
 
     useEffect(() => {
         // Show the first tab by default
         setActiveTab('exercises');
     }, []);
 
+    const handleEnrollNow = () => {
+        navigate('/variables'); // Navigate to the Variables page
+    };
+
     return (
         <div className="container">
             <h1>Welcome, {auth.currentUser?.email}</h1>
-            <button onClick={props.onLogout}>Logout</button>
+
+            {/* Logout Button */}
+            <button onClick={props.onLogout} className="logout-button">Logout</button>
 
             <h2>Your Dashboard</h2>
             <div className="tabs">
@@ -79,7 +91,9 @@ const LandingPage = (props: LandingPageProps): JSX.Element => {
                     <li className="course-item" key={course.id}>
                         <h3>{course.title}</h3>
                         <p>{course.description}</p>
-                        <button className="course-button">Enroll Now</button>
+                        {course.id === 1 && ( // Only add the "Enroll Now" button for the Variables course
+                            <button className="course-button" onClick={handleEnrollNow}>Enroll Now</button>
+                        )}
                     </li>
                 ))}
             </ul>
