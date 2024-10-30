@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import Variables from './Variables';
+import Variables from '../components/Variables';
 
 describe('Variables Component', () => {
     beforeEach(() => {

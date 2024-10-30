@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import DataTypes from './DataTypes';
+import DataTypes from '../components/DataTypes';
 
 describe('DataTypes Component', () => {
     beforeEach(() => {

@@ -1,6 +1,6 @@
 // login.test.ts
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from './firebaseConfig';
+import { auth } from '../components/firebaseConfig';
 
 describe('Login Page Tests', () => {
   test('User can log in with valid credentials', async () => {
