@@ -37,7 +37,8 @@
     "@babel/types": "^7.9.0",
     "escape-string-regexp": "^2.0.0",
     "xml2js": "^0.4.23",
-    "react-scripts": "^5.0.0"
+    "react-scripts": "^5.0.0",
+    "jest-junit": "^12.0.0"  // Ensure this is installed
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -58,6 +59,21 @@
   "jest": {
     "testMatch": [
       "**/src/tests/**/*.(test|spec).(js|jsx|ts|tsx)"
+    ],
+    "reporters": [
+      "default",
+      ["jest-junit", {
+        "suiteNameTemplate": "{filepath}",
+        "classNameTemplate": "{classname}",
+        "titleTemplate": "{title}",
+        "outputDirectory": "test-results",
+        "outputName": "junit.xml"
+      }]
     ]
+  },
+  "jest-junit": {
+    "suiteNameTemplate": "{filepath}",
+    "classNameTemplate": "{classname}",
+    "titleTemplate": "{title}"
   }
 }
