@@ -53,4 +53,7 @@
   "lint-staged": {
     "*.js": "npm run lint -- --cache --fix"
   }
+  "jest": {
+  "roots": ["<rootDir>/app/src/components"]
+  }
 }
