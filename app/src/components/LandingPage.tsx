@@ -27,15 +27,18 @@ const LandingPage = (props: LandingPageProps): JSX.Element => {
         { id: 6, title: 'Dictionaries', description: 'Understand how to use dictionaries for key-value pairs and data storage.' },
         { id: 7, title: 'Basic Input/Output', description: 'Learn how to take user input and display output using print and input functions.' },
     ];
-    
 
     useEffect(() => {
         // Show the first tab by default
         setActiveTab('exercises');
     }, []);
 
-    const handleEnrollNow = () => {
+    const handleEnrollNowVariables = () => {
         navigate('/variables'); // Navigate to the Variables page
+    };
+
+    const handleEnrollNowDataTypes = () => {
+        navigate('/data-types'); // Navigate to the Data Types page
     };
 
     return (
@@ -91,8 +94,11 @@ const LandingPage = (props: LandingPageProps): JSX.Element => {
                     <li className="course-item" key={course.id}>
                         <h3>{course.title}</h3>
                         <p>{course.description}</p>
-                        {course.id === 1 && ( // Only add the "Enroll Now" button for the Variables course
-                            <button className="course-button" onClick={handleEnrollNow}>Enroll Now</button>
+                        {course.id === 1 && ( // Add the "Enroll Now" button for the Variables course
+                            <button className="course-button" onClick={handleEnrollNowVariables}>Enroll Now</button>
+                        )}
+                        {course.id === 2 && ( // Add the "Enroll Now" button for the Data Types course
+                            <button className="course-button" onClick={handleEnrollNowDataTypes}>Enroll Now</button>
                         )}
                     </li>
                 ))}
