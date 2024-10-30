@@ -57,7 +57,7 @@
   },
   "jest": {
     "testMatch": [
-      "**/src/tests/*.(test|spec).(js|jsx|ts|tsx)"
+      "**/src/tests/**/*.(test|spec).(js|jsx|ts|tsx)"
     ]
   }
 }
