@@ -30,3 +30,6 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+      - name: Jest GitHub Action Reporter
+        uses: IgnusG/jest-report-action@v2.3.3
