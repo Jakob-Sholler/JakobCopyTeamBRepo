@@ -11,7 +11,7 @@
     "build:unminified": "npm run build:minified -- --no-minify",
     "lint": "eslint",
     "lint:code": "npm run lint -- *.js",
-    "test": "react-scripts test",
+    "test": "react-scripts test --reporters=default --reporters=jest-junit",
     "test:watch": "react-scripts test --watch"
   },
   "repository": {
@@ -59,21 +59,6 @@
   "jest": {
     "testMatch": [
       "**/src/tests/**/*.(test|spec).(js|jsx|ts|tsx)"
-    ],
-    "reporters": [
-      "default",
-      ["jest-junit", {
-        "suiteNameTemplate": "{filepath}",
-        "classNameTemplate": "{classname}",
-        "titleTemplate": "{title}",
-        "outputDirectory": "test-results",
-        "outputName": "junit.xml"
-      }]
     ]
-  },
-  "jest-junit": {
-    "suiteNameTemplate": "{filepath}",
-    "classNameTemplate": "{classname}",
-    "titleTemplate": "{title}"
   }
 }
