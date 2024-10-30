@@ -10,7 +10,8 @@
     "build:minified": "npm run build -- build index.js --target node --bundle-node-modules --no-source-maps",
     "build:unminified": "npm run build:minified -- --no-minify",
     "lint": "eslint",
-    "lint:code": "npm run lint -- *.js"
+    "lint:code": "npm run lint -- *.js",
+    "test": "react-scripts test"
   },
   "repository": {
     "type": "git",
