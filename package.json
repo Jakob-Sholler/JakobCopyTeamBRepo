@@ -4,22 +4,17 @@
   "author": "Your Name or Organization",
   "description": "Parse junit output from jest-junit reporter and display test annotations",
   "main": "dist/index.js",
-"scripts": {
-  "preversion": "make build_and_stage",
-  "build": "parcel build",
-  "build:minified": "npm run build -- --target node --bundle-node-modules --no-source-maps",
-  "build:unminified": "npm run build:minified --no-minify",
-  "lint": "eslint",
-  "lint:code": "npm run lint -- *.js",
-  "eslint-output": "eslint . > eslint-output.log || true",
-  "test": "jest --coverage",
-  "test:watch": "jest --watch"
-},
-  {
-  "type": "module"
-},
-
-
+  "scripts": {
+    "preversion": "make build_and_stage",
+    "build": "parcel build",
+    "build:minified": "npm run build -- --target node --bundle-node-modules --no-source-maps",
+    "build:unminified": "npm run build:minified --no-minify",
+    "lint": "eslint",
+    "lint:code": "npm run lint -- *.js",
+    "eslint-output": "eslint . > eslint-output.log || true",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IgnusG/jest-report-action.git"
