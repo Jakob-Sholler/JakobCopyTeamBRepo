@@ -1,6 +1,7 @@
-// jest.config.js
-/** @type {import('jest').Config} */
-module.exports = {
+// jest.config.mjs
+import type { Config } from 'jest';
+
+const config: Config = {
   verbose: true,
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
@@ -16,3 +17,5 @@ module.exports = {
     '/node_modules/(?!firebase)', // Optional, for packages needing transformation
   ],
 };
+
+export default config;
