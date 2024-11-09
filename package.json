@@ -11,9 +11,11 @@
   "build:unminified": "npm run build:minified --no-minify",
   "lint": "eslint",
   "lint:code": "npm run lint -- *.js",
+  "eslint-output": "eslint . > eslint-output.log || true",
   "test": "jest --coverage",
   "test:watch": "jest --watch"
 },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IgnusG/jest-report-action.git"
