@@ -1,7 +1,4 @@
-// jest.config.mjs
-import type { Config } from 'jest';
-
-const config: Config = {
+module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
   transform: {
@@ -16,5 +13,3 @@ const config: Config = {
     '/node_modules/(?!firebase)',
   ],
 };
-
-export default config;
