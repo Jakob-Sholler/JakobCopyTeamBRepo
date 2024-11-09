@@ -1,20 +1,18 @@
-import type { Config } from 'jest';
-
-const config: Config = {
+// jest.config.js
+/** @type {import('jest').Config} */
+module.exports = {
+  verbose: true,
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
   transform: {
-    '^.+\\.(ts|tsx|js|jsx)$': 'babel-jest',  // Transpile TypeScript and JavaScript with Babel
+    '^.+\\.(ts|tsx|js|jsx)$': 'babel-jest',
   },
   globals: {
     'ts-jest': {
-      tsconfig: 'tsconfig.json',  // Ensure ts-jest uses the correct TypeScript config
+      tsconfig: 'tsconfig.json', // Ensure ts-jest uses the correct TypeScript config
     },
   },
   transformIgnorePatterns: [
-    '/node_modules/(?!firebase)',  // Optional, for packages needing transformation
+    '/node_modules/(?!firebase)', // Optional, for packages needing transformation
   ],
-  verbose: true,  // Set Jest to be more verbose in the output
 };
-
-export default config;
