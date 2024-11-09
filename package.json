@@ -56,10 +56,5 @@
   },
   "lint-staged": {
     "*.js": "npm run lint -- --cache --fix"
-  },
-"jest": {
-  "testMatch": [
-    "**/src/**/*.test.(js|jsx|ts|tsx)"
-  ]
-}
+  }
 }
