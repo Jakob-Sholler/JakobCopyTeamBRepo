@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",  // or "esnext" for modern JavaScript support
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -12,8 +12,8 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx" // Use "react" if you are using React 16 or earlier
+    "jsx": "react-jsx"  // Use "react" if using React 16 or earlier
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "tests/**/*"],  // Include your test files as well
   "exclude": ["node_modules"]
 }
