@@ -1,78 +1,63 @@
 {
-    "name": "react-typescript-starter",
-    "homepage": "homepage",
-    "version": "0.1.0",
-    "private": true,
-    "dependencies": {
-        "@testing-library/jest-dom": "^5.17.0",
-        "@testing-library/user-event": "^13.5.0",
-        "@types/jest": "^27.5.2",
-        "@types/node": "^16.18.105",
-        "react": "^18.3.1",
-        "react-bootstrap": "^2.10.4",
-        "react-dom": "^18.3.1",
-        "react-scripts": "5.0.1",
-        "typescript": "^4.9.5",
-        "web-vitals": "^2.1.4"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "test:cov": "react-scripts test --coverage --watchAll",
-        "test:json": "react-scripts test --json --watchAll=false --outputFile jest-output.json --coverage",
-        "eject": "react-scripts eject",
-        "lint": "eslint ./src --ext .tsx --ext .ts --max-warnings 0",
-        "eslint-output": "eslint-output ./src --ext .tsx --ext .ts --max-warnings 0",
-        "format": "prettier --config .prettierrc --write src/**/*.{ts,tsx}"
-    },
-    "eslintConfig": {
-        "extends": [
-            "react-app",
-            "react-app/jest"
-        ]
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "devDependencies": {
-        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-        "@babel/plugin-transform-private-property-in-object": "^7.24.7",
-        "@testing-library/dom": "^10.4.0",
-        "@testing-library/react": "^16.0.0",
-        "@types/react": "^18.3.3",
-        "@types/react-dom": "^18.3.0",
-        "@typescript-eslint/eslint-plugin": "^8.2.0",
-        "@typescript-eslint/parser": "^8.2.0",
-        "eslint": "^8.57.0",
-        "eslint-config-prettier": "^9.1.0",
-        "eslint-output": "^3.0.1",
-        "eslint-plugin-prettier": "^5.2.1",
-        "eslint-plugin-react": "^7.35.0",
-        "gh-pages": "^6.1.1",
-        "jest": "^29.7.0",
-        "jest-environment-jsdom": "^29.7.0",
-        "prettier": "^3.3.3",
-        "prettier-eslint": "^16.3.0",
-        "ts-jest": "^29.2.4",
-        "ts-node": "^10.9.2"
-    },
-    "jest": {
-        "collectCoverageFrom": [
-            "src/**/*.ts",
-            "src/**/*.tsx",
-            "!src/index.tsx",
-            "!src/reportWebVitals.ts",
-            "!src/react-app-env.d.ts"
-        ]
+  "name": "jest-report-action",
+  "version": "2.3.3",
+  "author": "Your Name or Organization",
+  "description": "Parse junit output from jest-junit reporter and display test annotations",
+  "main": "dist/index.js",
+"scripts": {
+  "preversion": "make build_and_stage",
+  "build": "parcel build",
+  "build:minified": "npm run build -- --target node --bundle-node-modules --no-source-maps",
+  "build:unminified": "npm run build:minified --no-minify",
+  "lint": "eslint",
+  "lint:code": "npm run lint -- *.js",
+  "test": "jest --coverage",
+  "test:watch": "jest --watch"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgnusG/jest-report-action.git"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "jest",
+    "tests"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgnusG/jest-report-action/issues"
+  },
+  "homepage": "https://github.com/IgnusG/jest-report-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/github": "^2.1.1",
+    "@babel/parser": "^7.9.4",
+    "@babel/traverse": "^7.9.0",
+    "@babel/types": "^7.9.0",
+    "escape-string-regexp": "^2.0.0",
+    "xml2js": "^0.4.23",
+    "react-scripts": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "esm": "^3.2.25",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.3.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.js": "npm run lint -- --cache --fix"
+  },
+"jest": {
+  "testMatch": [
+    "**/src/**/*.test.(js|jsx|ts|tsx)"
+  ]
+}
 }
