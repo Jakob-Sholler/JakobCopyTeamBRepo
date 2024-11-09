@@ -68,6 +68,9 @@ jobs:
                   npm install |& tee -a ./dist/installation.html
                   echo "</pre></body></html>" >> ./dist/installation.html
                   echo "* [Installation](../installation.html)" >> docs/quick-links.md
+            # Install Babel preset for TypeScript
+            - name: Install Babel Preset TypeScript
+              run: npm install --save-dev @babel/preset-typescript
             # Run linter
             - name: Run Linter
               id: lint
