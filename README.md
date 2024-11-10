@@ -1,5 +1,5 @@
 # TeamBrilliance
-Team Brilliance Repo for COS 420 of Fall 2024
+Team Brilliance Repo for COS 420 of Fall 2024 you a meanie
 ## Members:
 Product Manager: Jakob Sholler<br/>
 Dev 1: Dmitrii Tsutskov<br/>
