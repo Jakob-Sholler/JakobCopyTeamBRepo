@@ -40,9 +40,6 @@
     "xml2js": "^0.4.23",
     "react-scripts": "^5.0.1"
   },
-  "overrides": {
-  "typescript" "^5.0.1"
-  },
   "devDependencies": {
     "eslint": "^6.8.0",
     "esm": "^3.2.25",
