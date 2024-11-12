@@ -3,10 +3,12 @@ All team members shall have their deliverable work reviewed by another team memb
 
 
 ### The person that did the task will assign a reviewer, by:<br/>
-1) Write a comment on the task @'ing a specific person to do the review e.g. “@name for review:”<br/>
-2) The comment also has either: a) a couple sentences/bullet points on what was done, or b) “see assigned comments” then add comments on the document on the relevant parts and assign the comments to the reviewer <br/>
-3) Check the task description in the GitHub Project Board has the rubric information and/or grading comments that were addressed, so the reviewer knows what to check. If it’s missing, the person doing the task needs to add it. <br/>
-4) Move the GitHub Project Board task to the Quality Checking Lane
+1) If no labels are assigned. Assign yourself to one with a Label to a task under the quality reviewer tab of the project section of the github task. The lablel will be a persons name
+2) Open task in the GitHub Project Board to view the task guidelines and open relevant examples <br/>
+3) The comment also has either: a) a couple sentences/bullet points on what was done, or b) “see assigned comments” then add comments on the document on the relevant parts and assign the comments to the reviewer <br/>+
+4) Check the task description in the GitHub Project Board has the rubric information and/or grading comments that were addressed, so the reviewer knows what to check. If it’s missing, the person doing the task needs to add it. <br/>
+5) After Quality Checking make sure to inculude The contributer % by following this model: Js 90 % / SA 10 %.  Used as an example to show qa Perceents may vary.   This is that the task was done by Jakob, or myself with Sebastian Qa'ing it.
+6) Move the GitHub Project Board task to the Quality Checking Lane
 <br/>
 ## The reviewer will review / quality check by: <br/>
 1) Open task in the GitHub Project Board to view the task guidelines and open relevant examples <br/>
@@ -14,7 +16,8 @@ All team members shall have their deliverable work reviewed by another team memb
 3) For revisions, looking at the edit history is very helpful to see what changed <br/>
 4) Any questions about the reviewed work will be asked of the author in order to clarify any ambiguity or misconceptions, as comments on the GitHub Project Board task or document <br/>
 5) Work that does not pass quality check will either be: a) fixed by the reviewer if the work is understandable and fixes are minor, or b) moved back to the In Progress lane and a comment added with what is not done/needs to be fixed (or questions) <br/>
-6) Work that passes quality checks will be advanced on the GitHub Project Board; if the reviewer did work they should add a comment on the task with the rough percentage of the task they did/fixed<br/>
+6) After Quality Checking make sure to inculude The contributer % by following this model: Js 90 % / SA 10 %.  Used as an example to show qa Perceents may vary.   This is that the task was done by Jakob, or myself with Sebastian Qa'ing it.
+7) Work that passes quality checks will be advanced on the GitHub Project Board; if the reviewer did work they should add a comment on the task with the rough percentage of the task they did/fixed<br/>
 
  Be friendly to your team in writing your comments and assume they did they best they could with the knowledge they had at the time. If there is an issue with a person doing work that needs lots of revisions, figure out the root causes via discussion e.g. at the sprint retrospective (root causes might include: knowledge, not seeking clarification, not looking at the examples before doing the work, someone with better knowledge should have been assigned the task or provided mentorship, etc).<br/><br/>
 
