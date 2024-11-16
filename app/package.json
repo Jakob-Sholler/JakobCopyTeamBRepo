@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@rushstack/eslint-patch": "^1.10.4",
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.7",
@@ -21,7 +22,7 @@
     "server": "ts-node src/components/server.ts",
     "client": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest --no-watch",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
