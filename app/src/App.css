@@ -8,18 +8,20 @@ body {
   color: #ffffff; /* White text */
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Align left */
+  align-items: flex-start; /* Align to the top */
+  padding-top: 20px; /* Space from the top */
 }
 
 /* Container */
 .container {
-  max-width: 400px;
+  max-width: 600px;
   background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* Futuristic glow */
   padding: 20px;
   text-align: center;
+  overflow: auto; /* Allow scrolling for overflowing content */
 }
 
 /* Headings */

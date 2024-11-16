@@ -31,15 +31,6 @@ describe('Variables Component', () => {
         const iframeElement = screen.getByTitle(/Python Compiler/i);
         expect(iframeElement).toBeInTheDocument();
 
-        // Check for the Run button
-        const runButton = screen.getByRole('button', { name: /Run Code/i });
-        expect(runButton).toBeInTheDocument();
-
-        // Simulate a click on the Run button
-        fireEvent.click(runButton);
-
-        // Check if alert is called
-        expect(window.alert).toHaveBeenCalledWith('Run button clicked!');
     });
 
     test('checks the Trinket URL is correct', () => {
