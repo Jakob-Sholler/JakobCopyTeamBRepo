@@ -1,8 +1,36 @@
-// src/Variables.tsx
-
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 
 const Variables: React.FC = () => {
+    const [feedback, setFeedback] = useState<string | null>(null);
+    const [userInput, setUserInput] = useState<string>('');
+    const [isLoading, setIsLoading] = useState<boolean>(false);
+    const [error, setError] = useState<string | null>(null);
+
+    // Function to handle getting hints from the backend
+    const handleGetHints = async () => {
+        if (!userInput.trim()) {
+            setError('Please enter some text to get a hint.');
+            return;
+        }
+
+        setIsLoading(true);
+        setError(null); // Reset previous errors
+
+        try {
+            // Replace with your backend API URL if it's different
+            const response = await axios.post('/api/feedback', {
+                prompt: userInput, // Pass the user's input as prompt
+            });
+            setFeedback(response.data.feedback); // Set the feedback or hint received
+        } catch (error) {
+            console.error('Error getting feedback:', error);
+            setError('Failed to get hint. Please try again.');
+        } finally {
+            setIsLoading(false);
+        }
+    };
+
     return (
         <div style={{ padding: '20px', maxWidth: '600px', margin: 'auto' }}>
             <h1>Understanding Variables in Python</h1>
@@ -32,10 +60,16 @@ const Variables: React.FC = () => {
                 frameBorder="0"
                 allowFullScreen
             ></iframe>
-            <button className="run-button" onClick={() => alert('Run button clicked!')}>
-                Run Code
-            </button>
-            <p>You can modify the code and run it directly within the embedded compiler!</p>
+
+            <h2>Interactive Chat</h2>
+            <p>Ask questions or interact with the chatbot below:</p>
+            <iframe
+                src="https://www.chatbase.co/chatbot-iframe/9YK6TrigVzwsAN6YqvxZO"
+                width="100%"
+                style={{ height: '100%', minHeight: '700px' }}
+                frameBorder="0"
+            ></iframe>
+
         </div>
     );
 };

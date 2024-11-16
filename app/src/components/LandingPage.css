@@ -1,52 +1,55 @@
 /* src/LandingPage.css */
 
-/* Existing styles... */
-
-/* Course List */
-.course-list {
-    list-style-type: none; /* Remove default list styling */
-    padding: 0; /* Remove padding */
-    margin-top: 20px; /* Space from the previous section */
+/* General Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Center content vertically */
+    align-items: center;  /* Center content horizontally */
+    padding: 20px;
+    min-height: 100vh;  /* Ensure the container is at least the height of the viewport */
+    background-color: #121212;
+    color: white;
+    text-align: center;  /* Center text inside the container */
 }
 
-/* Course Item */
-.course-item {
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px 0; /* Margin between items */
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); /* Glow effect */
-    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+/* Logout Button Container */
+.logout-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10; /* Ensure the logout button is above the other content */
 }
 
-.course-item:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6); /* Enhanced glow on hover */
-}
-
-/* Course Button */
-.course-button {
-    background: #00bcd4; /* Cyan button */
+/* Logout Button */
+.logout-button {
+    padding: 10px 20px;
+    background-color: #ff4c4c;
     color: white;
     border: none;
-    padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s; /* Transition for button */
+    font-size: 16px;
 }
 
-.course-button:hover {
-    background: #0097a7; /* Darker shade on hover */
+.logout-button:hover {
+    background-color: #ff1a1a;
 }
 
-/* Tabs Container */
+/* Heading */
+h1, h2, h3 {
+    color: white;
+}
+
+/* Tabs Section */
 .tabs {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    width: 100%;
+    max-width: 600px; /* Limit width to prevent tabs from spreading too far */
 }
 
-/* Tab Links */
 .tablink {
     background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
     color: white;
@@ -54,32 +57,67 @@
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s, transform 0.3s; /* Transition for hover effect */
+    transition: background 0.3s;
     flex: 1;
-    margin: 0 5px; /* Margin between buttons */
+    margin: 0 5px;
 }
 
 .tablink:hover {
     background: rgba(255, 255, 255, 0.2); /* Darker shade on hover */
 }
 
-/* Active Tab */
 .tablink.active {
-    background: #00bcd4; /* Active tab color */
-    color: white; /* White text for active tab */
+    background: #00bcd4;
+    color: white;
 }
 
 /* Tab Content */
 .tabcontent {
-    display: none; /* Hide all tab content by default */
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    display: none;  /* Hide content initially */
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3); /* Glow effect */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
 }
 
-/* Show the active tab content */
 .tabcontent.active {
-    display: block; /* Show the active tab content */
+    display: block; /* Show active tab content */
+}
+
+/* Course List */
+.course-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;  /* Limit course list width */
+}
+
+.course-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+}
+
+.course-button {
+    background: #00bcd4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.course-button:hover {
+    background: #0097a7;
 }
